@@ -23,6 +23,42 @@ public class Book {
     @Column (name = "cost")
     private Integer cost;
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getPage_count() {
+        return page_count;
+    }
+
+    public boolean isAvailability() {
+        return availability;
+    }
+
+    public Integer getCost() {
+        return cost;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPage_count(Integer page_count) {
+        this.page_count = page_count;
+    }
+
+    public void setCost(Integer cost) {
+        this.cost = cost;
+    }
+
     // Добавить ManyToMany
     // @Column (name = "category")
 
